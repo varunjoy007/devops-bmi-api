@@ -104,7 +104,6 @@ HTML_UI = """
 </head>
 <body>
   <div class="card">
-    <span class="badge-top">KUBERNETES DEPLOYED • v2.0</span>
     <h1>BMI Health Calculator</h1>
     <p class="subtitle">Enter your age, height, and weight to compute your Body Mass Index instantly.</p>
 
