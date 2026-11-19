@@ -1,0 +1,6 @@
+---
+- name: Restart BMI API
+  shell: |
+    fuser -k {{ app_port }}/tcp || true
+    sleep 1
+    APP_PORT={{ app_port }} nohup /opt/bmi-api/venv/bin/python3 /opt/bmi-api/app.py </dev/null >/opt/bmi-api/app.log 2>&1 &

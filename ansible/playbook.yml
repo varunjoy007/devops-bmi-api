@@ -1,0 +1,6 @@
+---
+- name: Configure and Deploy BMI API via Ansible
+  hosts: webservers
+  become: yes
+  roles:
+    - webserver
